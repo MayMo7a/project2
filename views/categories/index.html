@@ -13,17 +13,26 @@
 <body>
     <div class="container">
         <h1>Categories</h1>
-        
-        <div>
+        <div class="row">
             {{#categories}}
-            <a href="../hacks/index">
-                image: {{image}}
-                <h2>{{title}}</h2>
-            </a>
+            <div class="col s6">
+                <div class="card medium">
+                    <div class="card-content">
+                        <div class="card-image">
+                            <a href="../hacks/{{id}}">
+                            <img src="{{image}}" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2 class=" card-action teal">{{title}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </a>
+
             {{/categories}}
         </div>
         
-        <p><a href="/categories/edit">Edit Category</a></p>
         <p><a href="/categories/new">New Category</a></p>
 
     </div>

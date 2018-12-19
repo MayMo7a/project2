@@ -30,8 +30,18 @@ CREATE TABLE hacks(
     FOREIGN KEY (user_id) REFERENCES users
 );
 
--- INSERT INTO categories (title, image, user_id) VALUES 
--- ('tech', 'https://tradeandinvest.wales/sites/default/files/styles/standard_75_desktop_retina/public/tech_sector_image_1428x952px_2.jpg?itok=StuRrC0i', 1),
--- ('food', 'https://tradeandinvest.wales/sites/default/files/styles/standard_75_desktop_retina/public/tech_sector_image_1428x952px_2.jpg?itok=StuRrC0i', 1);
+-- INSERT INTO categories (title, image) VALUES 
+-- ('tech', 'https://www.sciencedaily.com/images/2018/04/180412141031_1_540x360.jpg'),
+-- ('food', 'https://www.sciencedaily.com/images/2018/04/180412141031_1_540x360.jpg');
+
+-- INSERT INTO hacks (title, description, media, category_id) VALUES ('clean desktop', 'easy way to clean your desktop', 'https://www.sciencedaily.com/images/2018/04/180412141031_1_540x360.jpg',
+-- 1),
+-- ('wash vegi', 'easy way to clean your desktop', 'https://www.sciencedaily.com/images/2018/04/180412141031_1_540x360.jpg',
+-- 1),
+-- ('clean desktop', 'easy way to clean your desktop', 'https://www.sciencedaily.com/images/2018/04/180412141031_1_540x360.jpg',
+-- 2),
+-- ('wash vegi', 'easy way to clean your desktop', 'https://www.sciencedaily.com/images/2018/04/180412141031_1_540x360.jpg',
+-- 2);
+
 
 

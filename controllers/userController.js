@@ -20,7 +20,7 @@ function renderLoginPage(req, res){
 
 function redirectShow(req, res){
     // res.redirect(`/users/${res.locals.user_id}`);
-    res.redirect(`../categories`);
+    res.redirect('../categories');
 }
 
 

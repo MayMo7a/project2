@@ -7,10 +7,9 @@ var auth = require('../middleware/auth');
 
 router.get('/', category.getAll, renderIndex);
 router.get('/new', auth.restrict, renderNew);
-router.get('/:id/edit', category.find, renderEdit);
 router.get('/:id', category.find, hack.findByCategory, renderShow); //take us to show page in hack
 router.post('/', category.create, redirectIndex);
-router.put('/:id', category.update, redirectIndex);
+
 
 
 function renderIndex(req, res){
@@ -30,13 +29,6 @@ function renderShow(req, res){
         hacks: res.locals.hack
     }
     res.render('./hacks/show', mustacheData)
-}
-
-function renderEdit(req,res){
-    var mustacheData = {
-        categories: res.locals.category
-    }
-    res.render('./categories/edit', mustacheData)
 }
 
 function redirectIndex(req, res){
