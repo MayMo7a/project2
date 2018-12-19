@@ -4,7 +4,8 @@
   "description": "app that will help you to hack your life ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,7 @@
     "mustache-express": "^1.2.8",
     "pg-promise": "^8.5.4"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node myentrypoint.js" //this should be whatever YOUR entrypoint file is named
-  },
   "engines": {
-    "node": "6.10.0" // put YOUR version of node here, in this format
+    "node": "6.10.0"
   }
 }
