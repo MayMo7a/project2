@@ -1,24 +1,42 @@
 # project2
+
+Name of the app: Life hack
+
+Description:
+It is a 3 models app which is categories, hacks post and users who type and upload the hacks 'photos, videos'.
+
+
 Explanations of the technologies used
+- List of Technologies Used
+Node.js
+Express.js
+HTML5
+CSS3
+JavaScript
+Heroku
 
 Wireframes
 
+
+
 User Stories
+1- the user wanna create a new category
+2- add a new hack with a photo
+3- the user wanna edit an old hack
 
-The approach taken
-
+ 
 Installation instructions (if needed)
 To download
-- Clone the repository with git clone https://github.com/MayMo7a/project2.git
+- Visit the project repositery https://github.com/MayMo7a/project2.git
+- Fork and clone it 
 
 To run
 - install the required dependencies with npm install --save express mustache-express pg-promise body-parser morgan method-override express-session bcrypt
-- install npm install -g nodemon
+<!-- - npm install cloudinary -->
+- npm install -g nodemon
 - nodemon index.js -e html,css,js
 - then view http://localhost:3000/ in your browser
 
+
 Unsolved problems
-Shoutouts - show appreciation for those who helped you
-Resources - useful sources that you used during the creation of the app
-Any other useful information about your app
 

@@ -14,13 +14,13 @@
     <div class="container">
 
         <a href="../categories">Categories</nav>
-        {{#hakcs}}
-        <a href="/show">
-            <h2>{{title}}</h2>
+        
+        <a href="/hacks/{{id}}/show">
+            <h2>{{hacks.title}}</h2>
         </a>
-        {{/hacks}}
+        
 
-        <a href="/new"> add new hack</a>
+        <a href="/hacks/{{id}}/new"> add new hack</a>
 
 
     </div>
