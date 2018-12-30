@@ -48,11 +48,12 @@ function renderEdit(req, res){
 
 //redirectIndex
 function redirectIndex(req, res){
-    res.redirect('/hacks');
+    res.redirect('./hacks');
 }
+
 //redirectShow
 function redirectShow(req, res){
-    res.redirect(`/hacks/${res.locals.hack_id}`);
+    res.redirect(`./hacks/${res.locals.hack_id}`);
 }
 
 module.exports = router;

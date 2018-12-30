@@ -12,8 +12,9 @@
   <title>New Hack</title>
 </head>
 <body>
+  <div class="container">
   <h1>Create a hack</h1>
-  <form action="/views/hacks/index" method="POST">
+  <form action="/hacks" method="POST">
     <label for="title">
       Title: <input type="text" id="title" name="title">
     </label>
@@ -26,12 +27,13 @@
     <label for="category_id">
       category: <select name="category_id" id="category_id">
         {{#categories}}
-        <option value="{{id}}">{{title}}</option>
+        <option value="{{id}}">{{categories.title}}</option>
         {{/categories}}
       </select>
       <button type="submit">Create Hack!</button>
     </label>
    
   </form>
+  </div>
 </body>
 </html>

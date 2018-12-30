@@ -28,11 +28,11 @@ function renderShow(req, res){
         categories: res.locals.category,
         hacks: res.locals.hack
     }
-    res.render('./hacks/show', mustacheData)
+    res.render('./hacks', mustacheData)
 }
 
 function redirectIndex(req, res){
-    res.redirect('/categories');
+    res.redirect('./categories');
 }
 
 
