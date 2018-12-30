@@ -6,14 +6,13 @@ Description:
 It is a 3 models app which is categories, hacks post and users who type and upload the hacks 'photos, videos'.
 
 
-Explanations of the technologies used
-- List of Technologies Used
-Node.js
-Express.js
-HTML5
-CSS3
-JavaScript
-Heroku
+List of Technologies Used
+- Node.js
+- Express.js
+- HTML5
+- CSS3
+- JavaScript
+
 
 Wireframes
 
