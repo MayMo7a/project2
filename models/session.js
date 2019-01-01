@@ -10,6 +10,7 @@ session.create = function(req, res, next){
         if (bcrypt.compareSync(req.body.password, result.password)){
             req.session.user = result;
         }
+        console.log(req.session)
         next();
     })
     .catch(function(err){

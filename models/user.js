@@ -23,6 +23,7 @@ user.create = function(req, res, next){
         .then(function(result){
             req.session.user = result;
             res.locals.user_id = result.id;
+            console.log(req.session)
             next();
         })
         .catch(function(error){

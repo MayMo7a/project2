@@ -26,8 +26,11 @@ hack.find = function(req, res, next){
 }
 
 hack.create = function(req, res, next){
-    db.one(`INSERT INTO hacks(title, description, media, category_id, user_id) VALUSE ($1, $2, $3, $4, $5) RETURNING id;`
-    [req.body.title, req.body.descriptiong, req.body.media, req.body.category_id, req.session.user.id])
+    console.log(req.session)
+    console.log('BODY', req.body)
+
+    db.one(`INSERT INTO hacks (title, description, media, category_id, user_id) VALUES ($1, $2, $3, $4, $5) RETURNING id;`,
+    [req.body.title, req.body.description, req.body.media, req.body.category_id, req.session.user.id])
     .then(function(result){
         res.locals.hack_id = result.id;
         next();
@@ -40,8 +43,8 @@ hack.create = function(req, res, next){
 }
 
 hack.update = function(req, res, next){
-    db.one(`UPDATE hacks SET title = $1, description = $2, media = $3, category_id = $4, user_id = $5 WHERE id = $6 RETURNING id;`
-    [req.body.title, req.body.descriptiong, req.body.media, req.body.category_id, req.session.user.id, req.params.id])
+    db.one(`UPDATE hacks SET title = $1, description = $2, media = $3, category_id = $4, user_id = $5 WHERE id = $6 RETURNING id;`,
+    [req.body.title, req.body.description, req.body.media, req.body.category_id, req.session.user.id, req.params.id])
     .then(function(result){
         res.locals.hack_id = result.id;
         next();

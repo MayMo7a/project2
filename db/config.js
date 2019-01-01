@@ -8,6 +8,6 @@ var config = {
   user: 'maymo7a' // your username here!!
 }
 
-var connection = pgInstance( process.env.DATABASE_URL ||config);
+var connection = pgInstance( process.env.DATABASE_URL || config);
 
 module.exports = connection;
